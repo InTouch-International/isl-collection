@@ -1,0 +1,887 @@
+{
+	"info": {
+		"_postman_id": "3e70bd0c-0320-4019-a82d-854745ff5dc0",
+		"name": "InTouch Services Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30708145",
+		"_collection_link": "https://intouch-io.postman.co/workspace/IVS-V2~fa283ef9-a336-4391-b1e5-ebebaf028cc8/collection/30708145-3e70bd0c-0320-4019-a82d-854745ff5dc0?action=share&source=collection_link&creator=30708145"
+	},
+	"item": [
+		{
+			"name": "Pre-Run File Upload",
+			"item": [
+				{
+					"name": "Upload Single File",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Files",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "frontImage",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "backImage",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Investment Management Services",
+			"item": [
+				{
+					"name": "Document Note",
+					"item": [
+						{
+							"name": "Get Document Notes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}?id=a9031d2d-4fea-43ae-99b1-20cdca3ecac3",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "a9031d2d-4fea-43ae-99b1-20cdca3ecac3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Get Clients",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}?id=cc99a57d-cd5b-493c-bdcd-88ed6ce9d9e1&searchName=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "cc99a57d-cd5b-493c-bdcd-88ed6ce9d9e1"
+										},
+										{
+											"key": "searchName",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Document Notes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"subject\": \"\",\n  \"message\": \"\",\n  \"type\": \"\",\n  \"subType\": \"\",\n  \"documentNoteLastUpdatedOn\": \"\",\n  \"permissionLevelDescription\": \"\",\n  \"privileges\": [\n    {\n      \"privilegeId\": \"\"\n    }\n  ],\n  \"attachments\": [\n    {\n      \"fileName\": \"\",\n      \"mimeType\": \"\",\n      \"fileData\": \"\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=225c6829-1842-445e-84a7-43f964e9ab72&client_id=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "225c6829-1842-445e-84a7-43f964e9ab72"
+										},
+										{
+											"key": "client_id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Clients Assets",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}?id=9105614f-86ec-4d10-91dc-ded962f93306&client_id=&PageNumber=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "9105614f-86ec-4d10-91dc-ded962f93306"
+										},
+										{
+											"key": "client_id",
+											"value": ""
+										},
+										{
+											"key": "PageNumber",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Clients Portfolio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}?id=f47b8aa7-5cf2-441c-ad5b-aea5a8202d63&client_id=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "f47b8aa7-5cf2-441c-ad5b-aea5a8202d63"
+										},
+										{
+											"key": "client_id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Identity and Onboarding Services",
+			"item": [
+				{
+					"name": "Liveness",
+					"item": [
+						{
+							"name": "Passive Liveness Detection",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"media\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/files?id=e6560d7d-58a4-4076-aac4-952aa9fadc2c",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"files"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "e6560d7d-58a4-4076-aac4-952aa9fadc2c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Liveness Token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "APIKey",
+										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
+										"type": "text"
+									},
+									{
+										"key": "Username",
+										"value": "intouch",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}?id=0d0081e7-0336-4cfb-b415-4cf03dcf513d",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0d0081e7-0336-4cfb-b415-4cf03dcf513d"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OCR",
+					"item": [
+						{
+							"name": "OCR Document",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "CountryCode",
+										"value": "ZAF",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "DocumentType",
+										"value": "PASSPORT",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "APIKey",
+										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "ReturnType",
+										"value": "JSONOBJECT",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"FrontImage\": \"\",\n    \"BackImage\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/files?id=abf72fa8-cd6f-46e7-9baf-ba1ea1c2d322",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"files"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "abf72fa8-cd6f-46e7-9baf-ba1ea1c2d322"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Face Compare",
+					"item": [
+						{
+							"name": "Compare Images",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"target\": \"\",\n    \"faces\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/files?id=90c11897-f2a1-4e9b-9107-1382ced5490f",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"files"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "90c11897-f2a1-4e9b-9107-1382ced5490f"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sybrin API",
+					"item": [
+						{
+							"name": "Get Token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "APIKey",
+										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}?id=00b2a57b-4386-46e9-a07a-3b608d736436",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "00b2a57b-4386-46e9-a07a-3b608d736436"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Passive Liveness Verification",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"media\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/files?id=37f83569-9db3-4f5a-8303-b56f42a632ca",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"files"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "37f83569-9db3-4f5a-8303-b56f42a632ca"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Identification Verification Services",
+			"item": [
+				{
+					"name": "Media",
+					"item": [
+						{
+							"name": "Get Media",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}?id=003b9efb-3921-490a-a4b6-4be6dfba878a&media_id=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "003b9efb-3921-490a-a4b6-4be6dfba878a"
+										},
+										{
+											"key": "media_id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Checks",
+					"item": [
+						{
+							"name": "Company KYC",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"EnterpriseName\": \"\",\r\n    \"ReturnReportOnly\": false,\r\n    \"RegistrationNumber\": \"\",\r\n    \"Reference\": \"\",\r\n    \"InputDirectorList\": [\r\n        {\r\n            \"PersonType\": \"\",\r\n            \"IDNumber\": \"\",\r\n            \"FirstName\": \"\",\r\n            \"Surname\": \"\",\r\n            \"DoKYC\": \"\",\r\n            \"EmailAddress\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=559f507e-e40d-49ad-a4c3-53e5f306ce1a",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "559f507e-e40d-49ad-a4c3-53e5f306ce1a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Individual KYC",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Reference\": \"\",\r\n  \"InputPerson\": {\r\n    \"IDNumber\": \"\",\r\n    \"FirstName\": \"\",\r\n    \"SecondName\": \"\",\r\n    \"Surname\": \"\"\r\n  },\r\n  \"InputAddress\": {\r\n    \"ResidentialLine1\": \"\",\r\n    \"ResidentialLine2\": \"\",\r\n    \"Suburb\": \"\",\r\n    \"City\": \"\",\r\n    \"PostCode\": \"\",\r\n    \"Province\": \"\",\r\n    \"Country\": \"\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=b202c75a-aa31-4bea-838f-fcc85f42c5b6",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "b202c75a-aa31-4bea-838f-fcc85f42c5b6"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Best Address",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"EnquiryReason\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"FirstName\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Surname\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Reference\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=3d6714b3-89fb-4467-abf8-3a6c04ad2139&id_number=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3d6714b3-89fb-4467-abf8-3a6c04ad2139"
+										},
+										{
+											"key": "id_number",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DHA",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ExternalReference\": \"\",\r\n    \"VendorID\": \"\",\r\n    \"CostCentreID\": \"\",\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=6db1edc7-4235-4218-8a0c-a49ffe3f53c1",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6db1edc7-4235-4218-8a0c-a49ffe3f53c1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PEP & Sanctions Check",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Parameters\": [\r\n    {\r\n      \"Name\": \"IDNumber\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"CountryCode\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Term\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Refinement\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Scope\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"StartDate\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"EndDate\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Categories\",\r\n      \"Value\": \"PEP\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=2ca14077-9213-4043-a4dc-315d95e6b09b",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2ca14077-9213-4043-a4dc-315d95e6b09b"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check Result",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ResultType\":\"2\",\r\n    \"Parameters\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=0b8df420-37c1-4f9f-b5d8-0d48c39828d6&tracking_id=",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0b8df420-37c1-4f9f-b5d8-0d48c39828d6"
+										},
+										{
+											"key": "tracking_id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Credit Check (Non CPA)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Parameters\": [\r\n    {\r\n      \"Name\": \"IDNumber\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"CountryCode\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"ReasonForCheck\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"FirstName\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Surname\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"Gender\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"EnquirerName\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"EnquirerContact\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"EnquirerEmailAddress\",\r\n      \"Value\": \"\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=4d47d620-e63d-477d-be16-50cb777ddc30",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4d47d620-e63d-477d-be16-50cb777ddc30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ID Verification (IDV)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ExternalReference\": \"\",\r\n    \"VendorID\": \"\",\r\n    \"CostCentreID\": \"\",\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=4b4c353a-d387-4e60-9486-f899e355c6ef",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4b4c353a-d387-4e60-9486-f899e355c6ef"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consumer Trace",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Parameters\": [\r\n    {\r\n      \"Name\": \"IDNumber\",\r\n      \"Value\": \"\"\r\n    },\r\n    {\r\n      \"Name\": \"CountryCode\",\r\n      \"Value\": \"\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=7fd4b536-10b0-4f35-ab72-885f14531791",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "7fd4b536-10b0-4f35-ab72-885f14531791"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SA Bank Account Validation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ExternalReference\": \"\",\r\n    \"VendorID\": \"\",\r\n    \"CostCentreID\": \"\",\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"Bank\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountType\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountHolderInitials\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountHolderIDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Branch\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CheckID\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"MainRecordID\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountHolderName\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"AccountHolderSurname\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=d89717df-ea1b-480c-ad1a-0a322e6742c9",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "d89717df-ea1b-480c-ad1a-0a322e6742c9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eagle Eye Credit Check",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"EnquiryReason\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"FirstName\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Surname\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Reference\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}?id=5ff5f918-4751-479e-9378-c3f1a6bb36ef",
+									"host": [
+										"{{base_url}}"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5ff5f918-4751-479e-9378-c3f1a6bb36ef"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authorisation",
+			"item": [
+				{
+					"name": "Get Authorisation Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"client_id\": {{client_id}},\n    \"client_secret\": {{client_secret}},\n    \"grant_type\": \"client_credentials\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{auth_url}}/token",
+							"host": [
+								"{{auth_url}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
