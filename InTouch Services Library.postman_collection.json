@@ -255,37 +255,6 @@
 								}
 							},
 							"response": []
-						},
-						{
-							"name": "Liveness Token",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "APIKey",
-										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
-										"type": "text"
-									},
-									{
-										"key": "Username",
-										"value": "intouch",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{base_url}}?id=0d0081e7-0336-4cfb-b415-4cf03dcf513d",
-									"host": [
-										"{{base_url}}"
-									],
-									"query": [
-										{
-											"key": "id",
-											"value": "0d0081e7-0336-4cfb-b415-4cf03dcf513d"
-										}
-									]
-								}
-							},
-							"response": []
 						}
 					]
 				},
@@ -296,32 +265,7 @@
 							"name": "OCR Document",
 							"request": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "CountryCode",
-										"value": "ZAF",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "DocumentType",
-										"value": "PASSPORT",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "APIKey",
-										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "ReturnType",
-										"value": "JSONOBJECT",
-										"type": "text",
-										"disabled": true
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"FrontImage\": \"\",\n    \"BackImage\": \"\"\n}",
@@ -394,32 +338,6 @@
 				{
 					"name": "Sybrin API",
 					"item": [
-						{
-							"name": "Get Token",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "APIKey",
-										"value": "4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtQ5QJh6yPSGXgWeepF8mlxw/72oZu5+n84H8MzXzC/sfPKyDz/5NzY9Du26L8Tz8uulVzB2p8brSXLHVVBDsJe56hvkuDz8t39TzPGrtsuo91+Bt9cCSQ8HfsQmfyYD3gSQNFpbWg5s5tSqeXVHaM4H5WEGBv4xOgJjaHGFH1CEA1Y4ybP+lUBTdlX0nQAsX9oL4VHsoSOS5cRbX/wc2Mg6uA16vvRggvOxolOeT3uHJX8SK8jqnMuxRsARQej2EY8sOyg0mR9C/jdXUM5GLXwZh3Mvym+BVrm4ECtpiZXxZsxyXNXeNV/qH6C+3Xd1Kb9Djwv0EZqNxsfqNsqqkIA5a/HhdY7JdXJH+L2htieSwNQYxIhFH5XVloo+ZXcepsFvhmIFIJcWfVQ8kZR1xB8alcxA/1g1o7LzDuErnp6dM1wzQcTcDD9AbFW2NC0hqC0=",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{base_url}}?id=00b2a57b-4386-46e9-a07a-3b608d736436",
-									"host": [
-										"{{base_url}}"
-									],
-									"query": [
-										{
-											"key": "id",
-											"value": "00b2a57b-4386-46e9-a07a-3b608d736436"
-										}
-									]
-								}
-							},
-							"response": []
-						},
 						{
 							"name": "Passive Liveness Verification",
 							"request": {
