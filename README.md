@@ -14,6 +14,7 @@ InTouch Services Library is a collection of API endpoints encapsulated in a Post
     - [Eagle Eye Credit Check](#eagle-eye-credit-check)
 - [Setup](#setup)
 - [Usage](#usage)
+- [Environement Configuration](#environement-configuration)
 - [Testing](#testing)
 
 ## Authorisation
@@ -56,6 +57,38 @@ Conducts a credit check using parameters like ID Number, Country Code, EnquiryRe
 
 1. Make a POST request to the `Get Authorisation Token` endpoint to retrieve the bearer token.
 2. Use the bearer token to authorise the other endpoints within the collection.
+
+## Environment Configuration
+
+The repository includes an environment configuration file named `Test.postman_environment.json`. This file contains predefined environment variables to facilitate testing and development in different stages. Here's how you can use it:
+
+### Importing Environment Configuration
+
+1. Download the `Test.postman_environment.json` file from the repository.
+2. Open Postman, click on the gear icon in the top right corner to manage environments.
+3. Click the Import button and select the `Test.postman_environment.json` file to import the environment configuration.
+
+### Utilising Environment Variables
+
+The `Test.postman_environment.json` file defines the following environment variables:
+
+- `base_url`: The base URL for the API endpoints.
+- `admin_url`: The URL for admin access.
+- `auth_url`: The URL for authorisation requests.
+- `token`: The bearer token for authorisation. This will be populated after making a successful authorisation request.
+- `client_id`: Your client ID for the authorisation request.
+- `client_secret`: Your client secret for the authorisation request.
+
+These variables allow for easier configuration and usage of the Postman collection. Make sure to populate the `client_id` and `client_secret` variables with your credentials before making authorisation requests.
+
+### Example Usage
+
+Here's an example of how you'd use an environment variable in a request:
+
+- URL: `{{base_url}}?id=2ca14077-9213-4043-a4dc-315d95e6b09b`
+
+The `{{base_url}}` placeholder will be replaced with the actual value defined in the `Test.postman_environment.json` file, making the request URL: `https://ivs.dev.intouch.io/runapi?id=2ca14077-9213-4043-a4dc-315d95e6b09b`.
+
 
 ## Testing
 
