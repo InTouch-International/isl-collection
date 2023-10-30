@@ -554,15 +554,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"EnquiryReason\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"FirstName\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Surname\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"Reference\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "{{base_url}}?id=3d6714b3-89fb-4467-abf8-3a6c04ad2139&id_number=",
 									"host": [
