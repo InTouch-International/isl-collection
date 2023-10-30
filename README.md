@@ -14,7 +14,7 @@ InTouch Services Library is a collection of API endpoints encapsulated in a Post
     - [Eagle Eye Credit Check](#eagle-eye-credit-check)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Environement Configuration](#environement-configuration)
+- [Environment Configuration](#environment-configuration)
 - [Testing](#testing)
 
 ## Authorisation
