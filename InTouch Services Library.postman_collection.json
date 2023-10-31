@@ -737,16 +737,30 @@
 				{
 					"name": "Get Authorisation Token",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"client_id\": {{client_id}},\n    \"client_secret\": {{client_secret}},\n    \"grant_type\": \"client_credentials\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
 								}
-							}
+							]
 						},
 						"url": {
 							"raw": "{{auth_url}}/token",
