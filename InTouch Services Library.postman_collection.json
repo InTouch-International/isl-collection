@@ -521,6 +521,38 @@
 							"response": []
 						},
 						{
+							"name": "DHA with Fallback",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ExternalReference\": \"\",\r\n    \"VendorID\": \"\",\r\n    \"CostCentreID\": \"\",\r\n    \"Parameters\": [\r\n        {\r\n            \"Name\": \"IDNumber\",\r\n            \"Value\": \"\"\r\n        },\r\n        {\r\n            \"Name\": \"CountryCode\",\r\n            \"Value\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/fallback?id=6db1edc7-4235-4218-8a0c-a49ffe3f53c1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"fallback"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6db1edc7-4235-4218-8a0c-a49ffe3f53c1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "PEP & Sanctions Check",
 							"request": {
 								"method": "POST",
