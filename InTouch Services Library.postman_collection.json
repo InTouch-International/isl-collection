@@ -262,7 +262,7 @@
 					"name": "OCR",
 					"item": [
 						{
-							"name": "OCR Document",
+							"name": "Identity Document OCR",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -492,7 +492,7 @@
 							"response": []
 						},
 						{
-							"name": "DHA",
+							"name": "DHA: SA Home Affairs ID Number Verification",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -615,7 +615,7 @@
 							"response": []
 						},
 						{
-							"name": "Credit Check (Non CPA)",
+							"name": "Credit Check (Non-CPA)",
 							"request": {
 								"method": "POST",
 								"header": [],
