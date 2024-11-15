@@ -225,7 +225,18 @@
 							"name": "Identity Document OCR",
 							"request": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "UseV2",
+										"value": "true",
+										"type": "text"
+									},
+									{
+										"key": "DocumentType",
+										"value": "IDCARD",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"FrontImage\": \"\",\n    \"BackImage\": \"\"\n}",
@@ -296,13 +307,19 @@
 					]
 				},
 				{
-					"name": "Sybrin API",
+					"name": "Liveness",
 					"item": [
 						{
 							"name": "Passive Liveness Verification",
 							"request": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "UseV3",
+										"value": "true",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"media\": \"\"\n}",
