@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "3e70bd0c-0320-4019-a82d-854745ff5dc0",
+		"_postman_id": "6330369e-cfec-4839-b98a-8a14023f5324",
 		"name": "InTouch Services Library",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30708145",
-		"_collection_link": "https://intouch-io.postman.co/workspace/IVS-V2~fa283ef9-a336-4391-b1e5-ebebaf028cc8/collection/30708145-3e70bd0c-0320-4019-a82d-854745ff5dc0?action=share&source=collection_link&creator=30708145"
+		"_exporter_id": "18004187",
+		"_collection_link": "https://pyrrhotech.postman.co/workspace/New-Team-Workspace~026577f5-4614-48e1-85db-1731d3146e67/collection/18004187-6330369e-cfec-4839-b98a-8a14023f5324?action=share&source=collection_link&creator=18004187"
 	},
 	"item": [
 		{
@@ -218,46 +218,6 @@
 		{
 			"name": "Identity and Onboarding Services",
 			"item": [
-				{
-					"name": "Liveness",
-					"item": [
-						{
-							"name": "Passive Liveness Detection",
-							"protocolProfileBehavior": {
-								"disabledSystemHeaders": {}
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"media\": \"\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/files?id=e6560d7d-58a4-4076-aac4-952aa9fadc2c",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"files"
-									],
-									"query": [
-										{
-											"key": "id",
-											"value": "e6560d7d-58a4-4076-aac4-952aa9fadc2c"
-										}
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
 				{
 					"name": "OCR",
 					"item": [
